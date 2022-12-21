@@ -1,11 +1,6 @@
-## My Project
+## AWS CloudTrail Lake query samples
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This repository contains a collection of sample queries for AWS CloudTrail Lake. The samples are designed to educate AWS customers on how to implement queries to investigate compliance data. They are organized by various samples for AWS CloudTrail Lake to return compliance data.  We will continue to add more queries to this repository as they are developed and verified. 
 
 ## Security
 
