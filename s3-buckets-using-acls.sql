@@ -10,7 +10,7 @@ SELECT DISTINCT
 FROM
     <EDS_ID> 
 WHERE
-	element_at(additionalEventData, 'aclRequired') = 'Yes'
+    element_at(additionalEventData, 'aclRequired') = 'Yes'
 ORDER BY
-	recipientAccountId,
+    recipientAccountId,
     awsRegion
