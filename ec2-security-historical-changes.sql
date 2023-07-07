@@ -3,6 +3,11 @@
 This query returns historical changes of security groups. This is useful when you are auditing / investigating
 changes made to security groups.
 
+Notice that there are two queries below that are being combined using the "UNION ALL" clause. 
+
+The first query pulls the AuthorizeSecurityGroupIngress events (for newly created security group rules).
+The 2nd query pulls the ModifySecurityGroupRulesRequest (for modification on security group rules).
+
 */
 
 -- This part of the query returns AuthorizeSecurityGroupIngress events
