@@ -3,7 +3,9 @@
 This query provides events with TLS version and event source. This query is helpful when you are trying to find
 specific version of TLS. Eg: If you’re trying to find events realted to TLSv1 (which will have a end of support on June 28. 2023),
 You can include in the filter criteria AND CAST(REPLACE(tlsDetails.tlsVersion, 'TLSv', '') AS DOUBLE) <= 1.1
-This filters all TLS connections with 1.1 and below.
+
+This filters all TLS connections with 1.1 and below. Feel free to change the version number on the filter to tilter out 
+different versions. You can also change use different operators such as =, >, <, >=, or <= in filtering TLS versions.
 
 */
 

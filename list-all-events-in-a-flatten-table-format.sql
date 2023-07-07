@@ -3,9 +3,10 @@
 This query displays the CloudTrail Lake logs in a flatten table format. This query expands the following objecs: 
 userIdentity, userIdentity.sessionContext, userIdentity.sessionContext.attributes, userIdentity.sessionContext.sessionIssuer, 
 userIdentity.sessionContext.webidfederationData, and tlsDetails. This query is useful when you are trying to display all 
-attributes in an object.
+attributes in an object. This query is helpful to see what colums you can use to pull from the objects available in CloudTrail.
 
-Limitation: This query does not expand Array object.
+Limitation: This query does not expand Array object. If you are going to attempt to flatten an array, use element_at function.
+Eg: element_at(requestParameters, 'ipPermissions')
 
 Note: Add filter Criteria in the where clause to filter the result set. Without a filter criteria, this query will scann all 
 the data and will result to very slow query.

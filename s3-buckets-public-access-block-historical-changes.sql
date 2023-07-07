@@ -4,7 +4,7 @@ This query returns the historical changes on the public access block policy of s
 trying to audit public access block changes or trying to find buckets that are exposed in the internet.
 
 If you are trying to find the current bucket policy that are allowing public access, look at the result set of this query.
-Check each bucket and  check if the blockPublicPolicy = false.
+Check for the first record of each bucket from the result set. Check each bucket and check if the blockPublicPolicy = false.
 
 */
 

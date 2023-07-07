@@ -1,7 +1,12 @@
 /*
 
 This query returns ec2 security groups with rules that allow public (0.0.0.0/0) access. This query is useful
-when you are trying to find all publicly accessible security groups.
+when you are trying to audit and investigate security groups allowing public access.
+
+Notice that there are two queries below that are being combined using the "UNION ALL" clause. 
+
+The first query pulls the AuthorizeSecurityGroupIngress events (for newly created security group rules).
+The 2nd query pulls the ModifySecurityGroupRulesRequest (for modification on security group rules).
 
 */
 
